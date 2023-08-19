@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 /public/
-app/lib/
+app/lib/data.ts
 
 # testing
 /coverage
