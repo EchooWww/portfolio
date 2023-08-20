@@ -42,7 +42,7 @@ export default function Intro() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
-              stifness: 125,
+              stiffness: 125,
               delay: 0.1,
               duration: 0.7,
             }}
