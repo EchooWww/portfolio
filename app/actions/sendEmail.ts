@@ -24,8 +24,9 @@ export async function sendEmail(formData: FormData) {
     };
   }
 
+  let data;
   try {
-    await resend.emails.send({
+    data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: "ywang623@my.bcit.ca",
       subject: "Message from contact form",
@@ -41,4 +42,7 @@ export async function sendEmail(formData: FormData) {
       error: getErrorMessage(error),
     };
   }
+  return {
+    data,
+  };
 }
