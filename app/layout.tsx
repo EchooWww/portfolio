@@ -1,10 +1,10 @@
-import Header from "./components/header";
-import ThemeSwitch from "./components/theme-switch";
-import ActiveSectionContextProvider from "./context/active-section-context";
+import Header from "../components/header";
+import ThemeSwitch from "../components/theme-switch";
+import ActiveSectionContextProvider from "../context/active-section-context";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import ThemeContextProvider from "./context/theme-context";
+import ThemeContextProvider from "../context/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
