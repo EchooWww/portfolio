@@ -6,7 +6,9 @@ import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import ThemeContextProvider from "../context/theme-context";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Echo Wang | Personal Portfolio",

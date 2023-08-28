@@ -8,23 +8,29 @@ import { HiEye } from "react-icons/hi";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { useSectionInView } from "../lib/hooks";
 import { TypeAnimation } from "react-type-animation";
+import { Unna } from "next/font/google";
+const font = Unna({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { ref } = useSectionInView("Home");
+
   return (
     <section
       ref={ref}
-      className="mb-2 max-w-[50rem] text-right sm:mb-0 scroll-mt-[100rem]"
+      className="mb-2 max-w-[50rem] sm:text-right text-center sm:mb-0 scroll-mt-[100rem]"
       id="home"
     >
       <div className="flex flex-col items-center justify-center sm:mb-10 sm:flex-row">
         <div className="w-full">
           <motion.h1
-            className="mb-10 mt-4 px-10 text-3xl font-medium !leading-[1.5] sm:text-5xl"
+            className="mb-10 mt-4 px-10 text-4xl font-medium !leading-[1.5] sm:text-6xl"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <span className="font-semibold">Echo Wang </span>
+            <span className={`${font.className} font-semibold`}>Echo Wang</span>
             <div className="text-[12pt] font-normal mt-4">
               <TypeAnimation
                 cursor={true}
