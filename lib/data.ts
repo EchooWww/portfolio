@@ -52,7 +52,7 @@ export const experiencesData = [
     title: "E-commerce Specialist",
     location: "Shanghai, China",
     description:
-      "Managed e-commerce operations, including transactions, inquiries, and issue resolution. Collaborated cross-functionally to optimize user experience. ",
+      "Managed e-commerce operations, including transactions, inquiries, and issue resolution. Collaborated cross-functionally to optimize user experience ",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2020",
   },
@@ -60,7 +60,7 @@ export const experiencesData = [
     title: "Social Media Specialist",
     location: "Shanghai, China",
     description:
-      "Implemented social media strategies, created engaging content, and managed channels to attract more followers.",
+      "Implemented social media strategies, created engaging content, and managed channels to attract more followers",
     icon: React.createElement(FaReact),
     date: "2017 - 2019",
   },
@@ -70,7 +70,7 @@ export const projectsData = [
   {
     title: "Courserai",
     description:
-      "A web app that enables users to generate their own courses with help of AI.",
+      "A web app that enables users to generate their own courses with help of AI",
     tags: [
       "Next.js",
       "React",
@@ -86,7 +86,7 @@ export const projectsData = [
   {
     title: "DriveThruDiet",
     description:
-      "A fast food nutrition calculator that helps users make healthier choices based on their diet goals.",
+      "A fast food nutrition calculator that helps users make healthier choices based on their diet goals",
     tags: [
       "Node.js",
       "Express",
@@ -100,7 +100,7 @@ export const projectsData = [
   {
     title: "EcoHabit",
     description:
-      "A eco-friendly habit tracker that helps users track their daily habits and carbon footprint.",
+      "A eco-friendly habit tracker that helps users track their daily habits and carbon footprint",
     tags: [
       "Html",
       "css",

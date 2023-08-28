@@ -7,6 +7,7 @@ import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiEye } from "react-icons/hi";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { useSectionInView } from "../lib/hooks";
+import { TypeAnimation } from "react-type-animation";
 export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { ref } = useSectionInView("Home");
@@ -17,16 +18,24 @@ export default function Intro() {
       id="home"
     >
       <div className="flex flex-col items-center justify-center sm:mb-10 sm:flex-row">
-        <motion.h1
-          className="mb-10 mt-4 px-10 text-3xl font-medium !leading-[1.5] sm:text-5xl"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <span className="font-semibold">Echo Wang </span>
-          <div className="text-[12pt] font-normal mt-4">
-            Life-long learner, problem solver, and cat lover.
-          </div>
-        </motion.h1>
+        <div className="w-full">
+          <motion.h1
+            className="mb-10 mt-4 px-10 text-3xl font-medium !leading-[1.5] sm:text-5xl"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <span className="font-semibold">Echo Wang </span>
+            <div className="text-[12pt] font-normal mt-4">
+              <TypeAnimation
+                cursor={true}
+                sequence={[
+                  "Life-long learner, problem solver, and team player",
+                ]}
+              />
+            </div>
+          </motion.h1>
+        </div>
+
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -43,11 +52,11 @@ export default function Intro() {
               height="200"
               quality="95"
               priority={true}
-              className="h-30 w-30 rounded-full object-cover border-[0.2rem] border-white shadow-2xl"
+              className="h-30 w-30 rounded-full object-cover border-[0.2rem] border-white shadow-2xl mb-10 sm:mb-0"
             />
           </motion.div>
           <motion.span
-            className="absolute bottom-0 right-1 text-3xl"
+            className="absolute sm:bottom-0 right-1 text-3xl bottom-10"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -57,7 +66,7 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            🐱
+            ✨
           </motion.span>
         </div>
       </div>
