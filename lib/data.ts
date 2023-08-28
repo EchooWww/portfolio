@@ -49,7 +49,7 @@ export const experiencesData = [
     date: "2022",
   },
   {
-    title: "E-commerce Specialist",
+    title: "E-commerce Specialist - China Merchants Bank",
     location: "Shanghai, China",
     description:
       "Managed e-commerce operations, including transactions, inquiries, and issue resolution. Collaborated cross-functionally to optimize user experience ",
@@ -57,7 +57,7 @@ export const experiencesData = [
     date: "2019 - 2020",
   },
   {
-    title: "Social Media Specialist",
+    title: "Social Media Specialist - Trip.com Group",
     location: "Shanghai, China",
     description:
       "Implemented social media strategies, created engaging content, and managed channels to attract more followers",
