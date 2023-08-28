@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import drivethrudietImg from "@/public/drivethrudiet.png";
+import ecohabitImg from "@/public/ecohabit.png";
+import courseraiImg from "@/public/courserai.png";
 
 export const links = [
   {
@@ -68,25 +68,50 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Courserai",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A web app that enables users to generate their own courses with help of AI.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Prisma",
+      "Tailwind",
+      "Shadcn",
+      "OpenAI API",
+      "YouTube API",
+    ],
+    imageUrl: courseraiImg,
   },
   {
     title: "DriveThruDiet",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A fast food nutrition calculator that helps users make healthier choices based on their diet goals.",
+    tags: [
+      "Node.js",
+      "Express",
+      "EJS",
+      "MongoDB",
+      "OpenAI API",
+      "Google Maps API",
+    ],
+    imageUrl: drivethrudietImg,
   },
   {
     title: "EcoHabit",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A eco-friendly habit tracker that helps users track their daily habits and carbon footprint.",
+    tags: [
+      "Html",
+      "css",
+      "Bootstrap",
+      "Javascript",
+      "Firebase",
+      "Node.js",
+      "Socket.io",
+      "OpenAI API",
+    ],
+    imageUrl: ecohabitImg,
   },
 ] as const;
 
@@ -99,10 +124,12 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
-  "Git",
   "Tailwind",
   "MongoDB",
   "Firebase",
   "Express",
   "Python",
+  "Prisma",
+  "Web API",
+  "Git & GitHub",
 ] as const;

@@ -15,7 +15,7 @@ export default function Experience() {
   const { theme } = useTheme();
   return (
     <section ref={ref} id="experience" className="sm:mb-40 mb-28 scroll-mt-28">
-      <SectionHeading>My Experience</SectionHeading>
+      <SectionHeading>Echo.experience()</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>

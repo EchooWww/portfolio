@@ -19,7 +19,7 @@ export default function Contact() {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <SectionHeading>Contact me </SectionHeading>
+      <SectionHeading>Echo.contact()</SectionHeading>
 
       <p className="text-gray-700 -mt-5 dark:text-white/80">
         Please contact me directly at{" "}

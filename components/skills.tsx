@@ -27,7 +27,7 @@ export default function Skills() {
       ref={ref}
       id="skills"
     >
-      <SectionHeading>My Skills</SectionHeading>
+      <SectionHeading>Echo.skills()</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-md text-gray-700">
         {skillsData.map((skill, index) => (
           <motion.li
