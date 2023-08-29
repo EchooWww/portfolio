@@ -25,18 +25,18 @@ export default function Intro() {
   return (
     <section
       ref={ref}
-      className="mb-2 max-w-[50rem] sm:text-right text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-2 max-w-[50rem] md:text-right text-center sm:mb-0 scroll-mt-[100rem] sm:mt-0 mt-8"
       id="home"
     >
-      <div className="flex flex-col items-center justify-center sm:mb-10 sm:flex-row">
+      <div className="flex flex-col items-center justify-center sm:mb-10 md:flex-row">
         <div className="w-full">
           <motion.h1
-            className="mb-10 mt-4 px-10 text-4xl font-medium !leading-[1.5] sm:text-6xl"
+            className="mb-10 mt-4 px-10 text-5xl font-medium !leading-[1.5] md:text-6xl"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
             <span className={`${font.className} font-semibold`}>Echo Wang</span>
-            <div className="text-[12pt] font-normal mt-4">
+            <div className="text-base md:text-lg font-normal mt-4">
               <TypeAnimation
                 cursor={true}
                 sequence={[
@@ -60,10 +60,10 @@ export default function Intro() {
               src="/portrait.jpeg"
               alt="Echo portrait"
               width="150"
-              height="200"
+              height="150"
               quality="95"
               priority={true}
-              className="h-30 w-30 rounded-full object-cover border-[0.2rem] border-white shadow-2xl mb-10 sm:mb-0"
+              className="md:h-32 md:w-32 rounded-full object-cover border-[0.2rem] border-white shadow-2xl mb-10 sm:mb-0 w-28 h-28"
             />
           </motion.div>
           <motion.span
@@ -83,7 +83,7 @@ export default function Intro() {
       </div>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-md font-medium sm:text-lg"
+        className="flex flex-col md:flex-row items-center justify-center gap-2 px-4 text-md font-medium md:text-lg"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -109,30 +109,29 @@ export default function Intro() {
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/echo-wang-946662265/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.15rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/EchooWww"
-          target="_blank"
-        >
-          <BsGithub />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.15rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://echoowww.github.io/blog/"
-          target="_blank"
-        >
-          <BsFillPenFill />
-        </a>
+        <div className="flex flex-row gap-1 mt-2 md:mt-0">
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://www.linkedin.com/in/echo-wang-946662265/"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.15rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://github.com/EchooWww"
+            target="_blank"
+          >
+            <BsGithub />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.15rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://echoowww.github.io/blog/"
+            target="_blank"
+          >
+            <BsFillPenFill />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
