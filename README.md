@@ -1,11 +1,11 @@
 <div align="center">
   <a href="https://www.echoasync.com">
-    <img src="./image.png" height=300/>
+    <img src="https://i.imgur.com/VrELlTU.gif" height=300/>
   </a>
   <h3>Echo's Portfolio</h3>
 </div>
 
-## Tech Stack
+### Tech Stack
 
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![nextjs](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
@@ -15,7 +15,7 @@
 ![resend](https://img.shields.io/badge/Resend-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![vercel](https://img.shields.io/badge/Vercel-20232A?style=for-the-badge&logo=vercel&logoColor=61DAFB)
 
-## Run Locally
+### Run Locally
 
 1. Clone the project
 
@@ -43,7 +43,7 @@
 
 5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+### Learn More
 
 This project is built with Next.js 13 App Router, which is a new paradigm for building Next app. You can learn more in the [Next.js 13 App Router](https://nextjs.org/docs/app).
 
@@ -53,6 +53,6 @@ The email service is built with Resend, which is a simple email service for deve
 
 The email form is built with React Hook Form, which is a performant, flexible and extensible forms with easy-to-use validation. You can learn more in the [React Hook Form documentation](https://react-hook-form.com/).
 
-## Reference
+### Reference
 
-[Next.js](https://nextjs.org/)-[Tailwind CSS](https://tailwindcss.com/)-[Framer Motion](https://www.framer.com/motion/)-[Resend](https://resend.io/)-[React Hook Form](https://react-hook-form.com/)
+[ByteGrad](https://www.youtube.com/watch?v=sUKptmUVIBM) | [Next.js](https://nextjs.org/) | [Tailwind CSS](https://tailwindcss.com/) | [Framer Motion](https://www.framer.com/motion/) | [Resend](https://resend.io/) | [React Hook Form](https://react-hook-form.com/)
