@@ -57,11 +57,11 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/portrait.jpeg"
+              src="/portrait1.jpg"
               alt="Echo portrait"
-              width="150"
-              height="150"
-              quality="95"
+              width="300"
+              height="300"
+              quality="100"
               priority={true}
               className="md:h-32 md:w-32 rounded-full object-cover border-[0.2rem] border-white shadow-2xl mb-10 sm:mb-0 w-28 h-28"
             />
@@ -106,7 +106,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Find me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <div className="flex flex-row gap-1 mt-2 md:mt-0">
@@ -123,13 +123,6 @@ export default function Intro() {
             target="_blank"
           >
             <BsGithub />
-          </a>
-          <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.15rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://echoowww.github.io/blog/"
-            target="_blank"
-          >
-            <BsFillPenFill />
           </a>
         </div>
       </motion.div>

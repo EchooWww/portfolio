@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaKeyboard, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import drivethrudietImg from "@/public/drivethrudiet.png";
 import ecohabitImg from "@/public/ecohabit.png";
@@ -35,11 +35,18 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Software Engineer Intern - RAZR Marketing",
+    location: "Vancouver, BC",
+    description: "Worked in automated testing and front-end development teams.",
+    icon: React.createElement(FaKeyboard),
+    date: "2024",
+  },
+  {
     title: "British Columbia Institute of Technology",
     location: "Burnaby, BC",
     description: "Stuying passionately with the goal of becoming a programmer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2023-",
+    date: "2023-Present",
   },
   {
     title: "the University of Hong Kong",
@@ -123,13 +130,15 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
+  "Angular",
+  "Playwright",
   "Node.js",
-  "Tailwind",
+  "Tailwind CSS",
   "MongoDB",
-  "Firebase",
-  "Express",
+  "SQL",
+  "Express.js",
   "Python",
   "Prisma",
-  "Web API",
+  "Restful API",
   "Git & GitHub",
 ] as const;
