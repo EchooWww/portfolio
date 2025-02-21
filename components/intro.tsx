@@ -25,7 +25,7 @@ export default function Intro() {
   return (
     <section
       ref={ref}
-      className="mb-2 max-w-[50rem] md:text-right text-center sm:mb-0 scroll-mt-[100rem] sm:mt-0 mt-8"
+      className="mb-2 w-full max-w-[40rem] mx-auto md:text-right text-center sm:mb-0 scroll-mt-[100rem] sm:mt-0 mt-8"
       id="home"
     >
       <div className="flex flex-col items-center justify-center sm:mb-10 md:flex-row">
@@ -59,8 +59,8 @@ export default function Intro() {
             <Image
               src="/portrait1.jpg"
               alt="Echo portrait"
-              width="300"
-              height="300"
+              width="200"
+              height="200"
               quality="100"
               priority={true}
               className="md:h-32 md:w-32 rounded-full object-cover border-[0.2rem] border-white shadow-2xl mb-10 sm:mb-0 w-28 h-28"
@@ -81,9 +81,9 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-
+      <div className="flex flex-col items-center w-full"></div>
       <motion.div
-        className="flex flex-col md:flex-row items-center justify-center gap-2 px-4 text-md font-medium md:text-lg"
+        className="flex flex-col md:flex-row items-center justify-center gap-2 px-4 text-md font-medium md:text-lg w-full"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
